@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -35,4 +39,121 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.layout{
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 800px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.menu{
+  width: 30%;
+  background-image: url(./images/bg-sidebar-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 10px;
+}
+
+.list{
+  overflow-y: scroll;
+}
+.list, .formStep{
+  color: rgb(96, 96, 224);
+  border: #282c34 solid 1px;
+  width: 60%;
+  border-radius: 10px;
+  height: 90%;
+}
+.list article{
+  text-align: justify;
+  font-size: 11px;
+  color: rgb(112, 112, 235);
+}
+
+.menu, .list{
+  height: 90%;
+}
+
+.containerMenu{
+  display: flex;
+  margin: 30px;
+}
+
+.logo{
+  color: white;
+  background: none;
+  margin-right: 20px;
+  border: white solid 1px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 800;
+  transition: 0.3s;
+  font-style: none;
+}
+.logo:hover{
+  background-color: aquamarine;
+  color: black;
+}
+
+.cajita{
+  height: 40px;
+  line-height: 40px;
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.formLabel{
+  display: block;
+  text-align: justify;
+  font-weight: 600;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.formLabel input[type='text']{
+  height: 30px;
+  border: #b1b3b6 solid 1px;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+
+.submit, .finish{
+  margin-top: 25px;
+  height: 40px;
+  width: 80px;
+  background-color: rgb(55, 55, 228);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.submit:hover{
+  background-color: aquamarine;
+  color: black;
+}
+.finish:hover{
+  background-color: aquamarine;
+  color: black;
+}
+
+.article{
+  margin-bottom: 10px;
+  margin-left: 30px;
+  font-weight: 300;
+  border: #61dafb solid 1px;
+  border-radius: 5px;
+  width: 200px;
+  padding: 5px;
 }

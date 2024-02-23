@@ -52,8 +52,8 @@ export const FormStep1 = () => {
       <form onSubmit={next}>
 
         <label className='formLabel'>Name <input type='text' name="name" placeholder='Here your name...' /></label>
-        <label className='formLabel'>Email address <input type='text' name="email" placeholder='Here your email...' /></label>
-        <label className='formLabel'>Phone Number <input type='text' name="phone" placeholder='Here your phone...' /></label>
+        <label className='formLabel'>Email address <input type='email' name="email" placeholder='Here your email...' /></label>
+        <label className='formLabel'>Phone Number <input type='number' name="phone" placeholder='Here your phone...' /></label>
 
         <input type='submit' className='submit' value="Next" />
 
